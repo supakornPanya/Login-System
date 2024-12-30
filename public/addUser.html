@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Add user</title>
+    <link href="style.css" rel="stylesheet" />
+
+    <!-- bad prctice (CDN) -->
+    <link
+      href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.12.22/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- bad prctice (CDN) -->
+  </head>
+  <body class="bg-gradient-to-t from-cyan-300 to-blue-100 min-h-screen">
+    <div class="navbar bg-base-300 w-full">
+      <div class="bg-base-100 rounded-box mr-3">
+        <a class="btn btn-ghost text-xl" href="index.html">HOME</a>
+      </div>
+      <div class="bg-base-100 rounded-box mr-3">
+        <a class="btn btn-ghost text-xl" href="ManageUser.html"
+          >User management</a
+        >
+      </div>
+    </div>
+    <div
+      class="artboard artboard-horizontal phone-4 min-h-screen mx-auto bg-white p-4"
+    >
+      <div
+        class="card bg-base-200 rounded-box grid h-20 place-items-center m-3"
+      >
+        <p class="text-3xl font-bold">Add user</p>
+      </div>
+      <div class="py-4 px-8">
+        <label class="input input-bordered flex items-center gap-2 my-4">
+          First name
+          <input
+            type="text"
+            class="grow"
+            placeholder="first name"
+            name="firstname"
+          />
+        </label>
+        <label class="input input-bordered flex items-center gap-2 my-4">
+          Last name
+          <input
+            type="text"
+            class="grow"
+            placeholder="last name"
+            name="lastname"
+          />
+        </label>
+        <label class="input input-bordered flex items-center gap-2 my-4">
+          Age
+          <input type="number" class="grow" placeholder="age" name="age" />
+        </label>
+        <div class="flex-cols">
+          <div><input type="radio" value="man" name="gender" /> men</div>
+          <div><input type="radio" value="women" name="gender" /> women</div>
+          <div>
+            <input type="radio" value="undefine" name="gender" /> undefine
+          </div>
+        </div>
+        <input
+          type="text"
+          name="description"
+          placeholder="description"
+          class="input input-bordered w-full max-w-full my-4"
+        />
+
+        <div class="bg-green-100 rounded-box my-3 p-3" id="Status">
+        </div>
+
+        <div class="pt-7">
+          <button
+            onclick="AddUser()"
+            class="w-full btn btn-outline btn-success items-center"
+          >
+            Submit
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="./js/addUser.js"></script>
+  </body>
+</html>

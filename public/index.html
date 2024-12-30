@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home</title>
+    <link href="style.css" rel="stylesheet" />
+
+    <!-- bad prctice (CDN) -->
+    <link
+      href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.12.22/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- bad prctice (CDN) -->
+  </head>
+  <body class="bg-gradient-to-t from-cyan-300 to-blue-100">
+    <div class="navbar bg-base-300 w-full">
+      <div class="bg-base-100 rounded-box mr-3">
+        <a class="btn btn-ghost text-xl" href="addUser.html">Add User</a>
+      </div>
+      <div class="bg-base-100 rounded-box mr-3">
+        <a class="btn btn-ghost text-xl" href="ManageUser.html"
+          >User management</a
+        >
+      </div>
+    </div>
+    <div
+      class="artboard artboard-horizontal phone-4 min-h-screen mx-auto bg-white p-4"
+    >
+    <h1 class="text-5xl">HOME</h1>
+  </div>
+  </body>
+</html>
